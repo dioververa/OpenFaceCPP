@@ -1,0 +1,2 @@
+/home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/dlib/CMakeFiles/dlib.dir
+/home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/dlib/CMakeFiles/dlib-shared.dir

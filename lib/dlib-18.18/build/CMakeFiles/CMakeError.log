@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2838815838/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2838815838.dir/build.make CMakeFiles/cmTryCompileExec2838815838.dir/build
+make[1]: se ingresa al directorio «/home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/CMakeFiles/CMakeTmp»
+/usr/bin/cmake -E cmake_progress_report /home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2838815838.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2838815838.dir/CheckSymbolExists.c.o   -c /home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2838815838
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2838815838.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2838815838.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2838815838 -rdynamic 
+CMakeFiles/cmTryCompileExec2838815838.dir/CheckSymbolExists.c.o: En la función `main':
+CheckSymbolExists.c:(.text+0x16): referencia a `pthread_create' sin definir
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2838815838] Error 1
+make[1]: se sale del directorio «/home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/CMakeFiles/CMakeTmp»
+make: *** [cmTryCompileExec2838815838/fast] Error 2
+
+File /home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2118141625/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2118141625.dir/build.make CMakeFiles/cmTryCompileExec2118141625.dir/build
+make[1]: se ingresa al directorio «/home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/CMakeFiles/CMakeTmp»
+/usr/bin/cmake -E cmake_progress_report /home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2118141625.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2118141625.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2118141625
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2118141625.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2118141625.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2118141625 -rdynamic -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2118141625] Error 1
+make[1]: se sale del directorio «/home/diover/proyectos/qemes/openface-c++/OpenFaceCpp-master/Lib/dlib-18.18/build/CMakeFiles/CMakeTmp»
+make: *** [cmTryCompileExec2118141625/fast] Error 2
+
+
